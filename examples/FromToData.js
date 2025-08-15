@@ -1,4 +1,6 @@
 const TradingView = require('../main');
+const fs = require('fs');
+const path = require('path');
 
 /**
  * This example tests fetching chart data of a number
@@ -15,10 +17,17 @@ const client = new TradingView.Client({
 });
 
 const chart = new client.Session.Chart();
-chart.setMarket('BINANCE:BTCEUR', {
-  timeframe: '240',
-  range: 2, // Can be positive to get before or negative to get after
-  to: 1700000000,
+// chart.setMarket('NASDAQ:PLCE', {
+//   timeframe: 'D',
+//   range: 1000, // Can be positive to get before or negative to get after
+//   to: 1705000000,
+// });
+
+// COMEX-GC1
+chart.setMarket('COMEX:GCZ2025', {
+  timeframe: 'D',
+  range: 1000, // Can be positive to get before or negative to get after
+  to: 1755244271,
 });
 
 // This works with indicators
@@ -29,6 +38,8 @@ TradingView.getIndicator('STD;Supertrend').then(async (indic) => {
 
   SUPERTREND.onUpdate(() => {
     console.log('Prices periods:', chart.periods);
+    fs.writeFileSync(path.join(__dirname, '../files/GCZ2025.data.json'), JSON.stringify(chart.periods));
+    fs.writeFileSync(path.join(__dirname, '../files/GCZ2025.supertrend.json'), JSON.stringify(SUPERTREND.periods));
     console.log('Study periods:', SUPERTREND.periods);
     client.end();
   });

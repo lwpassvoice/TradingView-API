@@ -1,4 +1,7 @@
 const WebSocket = require('ws');
+const HttpsProxyAgent = require('https-proxy-agent');
+
+const proxyAgent = new HttpsProxyAgent.HttpsProxyAgent('http://127.0.0.1:7890');
 
 const misc = require('./miscRequests');
 const protocol = require('./protocol');
@@ -230,6 +233,7 @@ module.exports = class Client {
     const server = clientOptions.server || 'data';
     this.#ws = new WebSocket(`wss://${server}.tradingview.com/socket.io/websocket?type=chart`, {
       origin: 'https://www.tradingview.com',
+      agent: proxyAgent,
     });
 
     if (clientOptions.token) {
