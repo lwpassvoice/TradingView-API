@@ -28,15 +28,15 @@
 // };
 // const londonTime = date.toLocaleString('en-GB', options);
 
-const fs = require('fs');
-const path = require('path');
-const data = require('./XAUUSD.data.json');
+const fs = require("fs");
+const path = require("path");
+const data = require("./XAUUSD.data.json");
 
 function formatData(rawData) {
-  return rawData.map(item => {
-    const dateStr = new Date(item.time * 1000).toLocaleString();
-    const date = new Date(item.time * 1000 + 3600000);
+  return rawData.map((item) => {
+    const date = new Date(item.time * 1000 + 3 * 3600000);
     date.setUTCHours(0, 0, 0, 0);
+    const dateStr = date.toLocaleString();
     return {
       time: item.time * 1000,
       open: item.open,
@@ -49,6 +49,8 @@ function formatData(rawData) {
   });
 }
 const formattedData = formatData(data);
-console.log(formattedData);
 // 写入文件
-fs.writeFileSync(path.join(__dirname, 'XAUUSD.data.json'), JSON.stringify(formattedData, null, 2));
+fs.writeFileSync(
+  path.join(__dirname, "XAUUSD.data.formatted.json"),
+  JSON.stringify(formattedData, null, 2)
+);
