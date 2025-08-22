@@ -21,7 +21,7 @@ const chart = new client.Session.Chart();
 
 chart.setMarket("XAUUSD", {
   timeframe: "D",
-  range: 1000, // Can be positive to get before or negative to get after
+  range: 1800, // Can be positive to get before or negative to get after
   to: new Date().getTime() / 1000,
 });
 
