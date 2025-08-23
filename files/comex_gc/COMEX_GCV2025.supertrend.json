@@ -1,5 +1,55 @@
 [
   {
+    "$time": 1755813600,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 3465.085926065924,
+    "Body_Middle": 3373.55,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2025/8/22 06:00:00"
+  },
+  {
+    "$time": 1755727200,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 3465.085926065924,
+    "Body_Middle": 3359.8,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2025/8/21 06:00:00"
+  },
+  {
+    "$time": 1755640800,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 3465.085926065924,
+    "Body_Middle": 3347.1,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2025/8/20 06:00:00"
+  },
+  {
+    "$time": 1755554400,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 3465.085926065924,
+    "Body_Middle": 3341.45,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2025/8/19 06:00:00"
+  },
+  {
+    "$time": 1755468000,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 3465.085926065924,
+    "Body_Middle": 3352.1,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2025/8/18 06:00:00"
+  },
+  {
     "$time": 1755208800,
     "Up_Trend": 1e+100,
     "Down_Trend": 3465.085926065924,
@@ -2948,55 +2998,5 @@
     "Uptrend_to_Downtrend": 0,
     "Trend_Change": 0,
     "date": "2024/6/13 06:00:00"
-  },
-  {
-    "$time": 1718143200,
-    "Up_Trend": 1e+100,
-    "Down_Trend": 2535.6436541264707,
-    "Body_Middle": 2500.3,
-    "Downtrend_to_Uptrend": 0,
-    "Uptrend_to_Downtrend": 0,
-    "Trend_Change": 0,
-    "date": "2024/6/12 06:00:00"
-  },
-  {
-    "$time": 1718056800,
-    "Up_Trend": 1e+100,
-    "Down_Trend": 2535.6436541264707,
-    "Body_Middle": 2473,
-    "Downtrend_to_Uptrend": 0,
-    "Uptrend_to_Downtrend": 0,
-    "Trend_Change": 0,
-    "date": "2024/6/11 06:00:00"
-  },
-  {
-    "$time": 1717970400,
-    "Up_Trend": 1e+100,
-    "Down_Trend": 2542.87072680719,
-    "Body_Middle": 2473.4,
-    "Downtrend_to_Uptrend": 0,
-    "Uptrend_to_Downtrend": 0,
-    "Trend_Change": 0,
-    "date": "2024/6/10 06:00:00"
-  },
-  {
-    "$time": 1717711200,
-    "Up_Trend": 1e+100,
-    "Down_Trend": 2548.723029785766,
-    "Body_Middle": 2472,
-    "Downtrend_to_Uptrend": 0,
-    "Uptrend_to_Downtrend": 0,
-    "Trend_Change": 0,
-    "date": "2024/6/7 06:00:00"
-  },
-  {
-    "$time": 1717624800,
-    "Up_Trend": 1e+100,
-    "Down_Trend": 2555.629244840329,
-    "Body_Middle": 2538.7,
-    "Downtrend_to_Uptrend": 0,
-    "Uptrend_to_Downtrend": 0,
-    "Trend_Change": 0,
-    "date": "2024/6/6 06:00:00"
   }
 ]

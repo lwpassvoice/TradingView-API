@@ -6,6 +6,9 @@ const years = [2020, 2021, 2022, 2023, 2024, 2025];
 // const symbolsTmp = generateComexCodes(years);
 // console.log(symbolsTmp);
 const symbolsTmp = [
+  'GCF2019', 'GCG2019', 'GCH2019', 'GCJ2019', 'GCK2019',
+  'GCM2019', 'GCN2019', 'GCQ2019', 'GCU2019', 'GCV2019',
+  'GCX2019', 'GCZ2019',
   'GCF2020', 'GCG2020', 'GCH2020', 'GCJ2020', 'GCK2020',
   'GCM2020', 'GCN2020', 'GCQ2020', 'GCU2020', 'GCV2020',
   'GCX2020', 'GCZ2020', 'GCF2021', 'GCG2021', 'GCH2021',
@@ -23,8 +26,9 @@ const symbolsTmp = [
   'GCX2025', 'GCZ2025'
 ]
 
-const symbols = ['GCU2025', 'GCV2025',
-  'GCX2025', 'GCZ2025'];
+const symbols = ['GCF2019', 'GCG2019', 'GCH2019', 'GCJ2019', 'GCK2019',
+'GCM2019', 'GCN2019', 'GCQ2019', 'GCU2019', 'GCV2019',
+'GCX2019', 'GCZ2019'];
 /**
  * This example tests fetching chart data of a number
  * of candles before or after a timestamp
@@ -51,7 +55,7 @@ const client = new TradingView.Client({
         chart.setMarket(`COMEX:${symbol}`, {
           timeframe: "D",
           range: 300, // Can be positive to get before or negative to get after
-          to: 1755308940,
+          to: new Date().getTime() / 1000,
         });
 
         // This works with indicators
@@ -81,15 +85,17 @@ const client = new TradingView.Client({
     console.log("Study periods:", data.supertrend.length);
 
     fs.writeFileSync(
-      path.join(__dirname, `../files/COMEX_${symbol}.data.json`),
+      path.join(__dirname, `../files/comex_gc/COMEX_${symbol}.data.json`),
       JSON.stringify(data.prices, null, 2)
     );
     fs.writeFileSync(
-      path.join(__dirname, `../files/COMEX_${symbol}.supertrend.json`),
+      path.join(__dirname, `../files/comex_gc/COMEX_${symbol}.supertrend.json`),
       JSON.stringify(data.supertrend, null, 2)
     );
 
-    await new Promise((resolve) => setTimeout(resolve, 55000)); // 每次循环暂停15秒
+    if (i < symbols.length - 1) {
+      await new Promise((resolve) => setTimeout(resolve, 15000)); // 每次循环暂停15秒
+    }
   }
   console.log("All done!");
   client.end();

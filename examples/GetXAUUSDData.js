@@ -34,11 +34,11 @@ TradingView.getIndicator("STD;Supertrend").then(async (indic) => {
   SUPERTREND.onUpdate(() => {
     console.log("Prices periods:", chart.periods);
     fs.writeFileSync(
-      path.join(__dirname, "../files/XAUUSD.data.json"),
+      path.join(__dirname, "../files/xau/XAUUSD.data.json"),
       JSON.stringify(chart.periods)
     );
     fs.writeFileSync(
-      path.join(__dirname, "../files/XAUUSD.supertrend.json"),
+      path.join(__dirname, "../files/xau/XAUUSD.supertrend.json"),
       JSON.stringify(SUPERTREND.periods)
     );
     console.log("Study periods:", SUPERTREND.periods);
