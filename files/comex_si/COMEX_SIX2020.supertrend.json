@@ -1,0 +1,632 @@
+[
+  {
+    "$time": 1606258800,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 24.719280818908484,
+    "Body_Middle": 23.356,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/11/25 07:00:00"
+  },
+  {
+    "$time": 1606172400,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 24.804423132120537,
+    "Body_Middle": 23.311,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 1,
+    "Trend_Change": 1,
+    "date": "2020/11/24 07:00:00"
+  },
+  {
+    "$time": 1606086000,
+    "Up_Trend": 23.54131400642999,
+    "Down_Trend": 1e+100,
+    "Body_Middle": 23.624,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/11/23 07:00:00"
+  },
+  {
+    "$time": 1605826800,
+    "Up_Trend": 23.54131400642999,
+    "Down_Trend": 1e+100,
+    "Body_Middle": 24.348,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/11/20 07:00:00"
+  },
+  {
+    "$time": 1605740400,
+    "Up_Trend": 23.54131400642999,
+    "Down_Trend": 1e+100,
+    "Body_Middle": 24.033,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/11/19 07:00:00"
+  },
+  {
+    "$time": 1605654000,
+    "Up_Trend": 23.54131400642999,
+    "Down_Trend": 1e+100,
+    "Body_Middle": 24.433,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/11/18 07:00:00"
+  },
+  {
+    "$time": 1605567600,
+    "Up_Trend": 23.54131400642999,
+    "Down_Trend": 1e+100,
+    "Body_Middle": 24.6975,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/11/17 07:00:00"
+  },
+  {
+    "$time": 1605481200,
+    "Up_Trend": 23.54131400642999,
+    "Down_Trend": 1e+100,
+    "Body_Middle": 24.786,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/11/16 07:00:00"
+  },
+  {
+    "$time": 1605222000,
+    "Up_Trend": 23.54131400642999,
+    "Down_Trend": 1e+100,
+    "Body_Middle": 24.759,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/11/13 07:00:00"
+  },
+  {
+    "$time": 1605135600,
+    "Up_Trend": 23.54131400642999,
+    "Down_Trend": 1e+100,
+    "Body_Middle": 24.29,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/11/12 07:00:00"
+  },
+  {
+    "$time": 1605049200,
+    "Up_Trend": 23.54131400642999,
+    "Down_Trend": 1e+100,
+    "Body_Middle": 24.098,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/11/11 07:00:00"
+  },
+  {
+    "$time": 1604962800,
+    "Up_Trend": 23.54131400642999,
+    "Down_Trend": 1e+100,
+    "Body_Middle": 24.3305,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/11/10 07:00:00"
+  },
+  {
+    "$time": 1604876400,
+    "Up_Trend": 23.54131400642999,
+    "Down_Trend": 1e+100,
+    "Body_Middle": 23.685,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/11/9 07:00:00"
+  },
+  {
+    "$time": 1604617200,
+    "Up_Trend": 23.54131400642999,
+    "Down_Trend": 1e+100,
+    "Body_Middle": 25.4355,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/11/6 07:00:00"
+  },
+  {
+    "$time": 1604530800,
+    "Up_Trend": 23.116464475052577,
+    "Down_Trend": 1e+100,
+    "Body_Middle": 24.985500000000002,
+    "Downtrend_to_Uptrend": 1,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 1,
+    "date": "2020/11/5 07:00:00"
+  },
+  {
+    "$time": 1604444400,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 25.139995534913584,
+    "Body_Middle": 23.772,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/11/4 07:00:00"
+  },
+  {
+    "$time": 1604358000,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 25.139995534913584,
+    "Body_Middle": 24.305,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/11/3 07:00:00"
+  },
+  {
+    "$time": 1604271600,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 25.139995534913584,
+    "Body_Middle": 24.0105,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/11/2 07:00:00"
+  },
+  {
+    "$time": 1604008800,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 25.139995534913584,
+    "Body_Middle": 23.617,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/10/30 06:00:00"
+  },
+  {
+    "$time": 1603922400,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 25.139995534913584,
+    "Body_Middle": 23.192,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/10/29 06:00:00"
+  },
+  {
+    "$time": 1603836000,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 25.2732185568961,
+    "Body_Middle": 23.8665,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/10/28 06:00:00"
+  },
+  {
+    "$time": 1603749600,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 25.2732185568961,
+    "Body_Middle": 24.576999999999998,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/10/27 06:00:00"
+  },
+  {
+    "$time": 1603663200,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 25.2732185568961,
+    "Body_Middle": 24.43,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/10/26 06:00:00"
+  },
+  {
+    "$time": 1603404000,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 25.2732185568961,
+    "Body_Middle": 24.679000000000002,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/10/23 06:00:00"
+  },
+  {
+    "$time": 1603317600,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 25.2732185568961,
+    "Body_Middle": 24.8365,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/10/22 06:00:00"
+  },
+  {
+    "$time": 1603231200,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 25.2732185568961,
+    "Body_Middle": 25.153,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/10/21 06:00:00"
+  },
+  {
+    "$time": 1603144800,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 25.2732185568961,
+    "Body_Middle": 24.7335,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/10/20 06:00:00"
+  },
+  {
+    "$time": 1603058400,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 25.2732185568961,
+    "Body_Middle": 24.6495,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/10/19 06:00:00"
+  },
+  {
+    "$time": 1602799200,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 25.2732185568961,
+    "Body_Middle": 24.372500000000002,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/10/16 06:00:00"
+  },
+  {
+    "$time": 1602712800,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 25.2732185568961,
+    "Body_Middle": 24.162,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/10/15 06:00:00"
+  },
+  {
+    "$time": 1602626400,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 25.2732185568961,
+    "Body_Middle": 24.3215,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/10/14 06:00:00"
+  },
+  {
+    "$time": 1602540000,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 25.2732185568961,
+    "Body_Middle": 24.5995,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/10/13 06:00:00"
+  },
+  {
+    "$time": 1602453600,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 25.2732185568961,
+    "Body_Middle": 25.317,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/10/12 06:00:00"
+  },
+  {
+    "$time": 1602194400,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 25.2732185568961,
+    "Body_Middle": 24.649,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/10/9 06:00:00"
+  },
+  {
+    "$time": 1602108000,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 25.2732185568961,
+    "Body_Middle": 23.8675,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/10/8 06:00:00"
+  },
+  {
+    "$time": 1602021600,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 25.2732185568961,
+    "Body_Middle": 23.5955,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/10/7 06:00:00"
+  },
+  {
+    "$time": 1601935200,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 25.2732185568961,
+    "Body_Middle": 24.169,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/10/6 06:00:00"
+  },
+  {
+    "$time": 1601848800,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 25.2732185568961,
+    "Body_Middle": 24.252,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/10/5 06:00:00"
+  },
+  {
+    "$time": 1601589600,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 25.2732185568961,
+    "Body_Middle": 23.854,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/10/2 06:00:00"
+  },
+  {
+    "$time": 1601503200,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 25.2732185568961,
+    "Body_Middle": 23.963,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/10/1 06:00:00"
+  },
+  {
+    "$time": 1601416800,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 25.2732185568961,
+    "Body_Middle": 23.932,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/9/30 06:00:00"
+  },
+  {
+    "$time": 1601330400,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 25.2732185568961,
+    "Body_Middle": 24.0875,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/9/29 06:00:00"
+  },
+  {
+    "$time": 1601244000,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 25.2732185568961,
+    "Body_Middle": 23.356,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/9/28 06:00:00"
+  },
+  {
+    "$time": 1600984800,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 25.2732185568961,
+    "Body_Middle": 23.180500000000002,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/9/25 06:00:00"
+  },
+  {
+    "$time": 1600898400,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 25.2732185568961,
+    "Body_Middle": 23.051000000000002,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/9/24 06:00:00"
+  },
+  {
+    "$time": 1600812000,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 25.951076174328996,
+    "Body_Middle": 23.609499999999997,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/9/23 06:00:00"
+  },
+  {
+    "$time": 1600725600,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 26.848251304810002,
+    "Body_Middle": 24.816499999999998,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/9/22 06:00:00"
+  },
+  {
+    "$time": 1600639200,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 27.7741125609,
+    "Body_Middle": 25.573,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/9/21 06:00:00"
+  },
+  {
+    "$time": 1600380000,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 28.32906489,
+    "Body_Middle": 27.161,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/9/18 06:00:00"
+  },
+  {
+    "$time": 1600293600,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 28.32906489,
+    "Body_Middle": 27.033,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/9/17 06:00:00"
+  },
+  {
+    "$time": 1600207200,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 28.4489,
+    "Body_Middle": 27.443,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/9/16 06:00:00"
+  },
+  {
+    "$time": 1600120800,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 28.4489,
+    "Body_Middle": 27.429,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/9/15 06:00:00"
+  },
+  {
+    "$time": 1600034400,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 28.4489,
+    "Body_Middle": 27.2125,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/9/14 06:00:00"
+  },
+  {
+    "$time": 1599775200,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 28.4489,
+    "Body_Middle": 26.813,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/9/11 06:00:00"
+  },
+  {
+    "$time": 1599688800,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 1e+100,
+    "Body_Middle": 27.2195,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/9/10 06:00:00"
+  },
+  {
+    "$time": 1599602400,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 1e+100,
+    "Body_Middle": 27.041,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/9/9 06:00:00"
+  },
+  {
+    "$time": 1599429600,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 1e+100,
+    "Body_Middle": 26.947,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/9/7 06:00:00"
+  },
+  {
+    "$time": 1599170400,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 1e+100,
+    "Body_Middle": 26.7295,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/9/4 06:00:00"
+  },
+  {
+    "$time": 1599084000,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 1e+100,
+    "Body_Middle": 27.009,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/9/3 06:00:00"
+  },
+  {
+    "$time": 1598997600,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 1e+100,
+    "Body_Middle": 27.8215,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/9/2 06:00:00"
+  },
+  {
+    "$time": 1598911200,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 1e+100,
+    "Body_Middle": 28.6625,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/9/1 06:00:00"
+  },
+  {
+    "$time": 1598824800,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 1e+100,
+    "Body_Middle": 28.380000000000003,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/8/31 06:00:00"
+  },
+  {
+    "$time": 1598565600,
+    "Up_Trend": 1e+100,
+    "Down_Trend": 1e+100,
+    "Body_Middle": 1e+100,
+    "Downtrend_to_Uptrend": 0,
+    "Uptrend_to_Downtrend": 0,
+    "Trend_Change": 0,
+    "date": "2020/8/28 06:00:00"
+  }
+]
