@@ -7,7 +7,7 @@
     "test": "vitest",
     "example": "node --env-file=.env",
     "example:dev": "nodemon --env-file=.env",
-    "build": "pkg . --out-path dist"
+    "build": "npm pack"
   },
   "repository": {
     "type": "git",
