@@ -1,3 +1,4 @@
+require('dotenv').config();
 const miscRequests = require('./src/miscRequests');
 const Client = require('./src/client');
 const BuiltInIndicator = require('./src/classes/BuiltInIndicator');
