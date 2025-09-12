@@ -1,16 +1,17 @@
 {
-  "name": "@mathieuc/tradingview",
-  "version": "3.5.1",
-  "description": "Tradingview instant stocks API, indicator alerts, trading bot, and more !",
+  "name": "tradingview-helper",
+  "version": "1.0.0",
+  "description": "Based on @mathieuc/tradingview V3.5.1",
   "main": "main.js",
   "scripts": {
     "test": "vitest",
     "example": "node --env-file=.env",
-    "example:dev": "nodemon --env-file=.env"
+    "example:dev": "nodemon --env-file=.env",
+    "build": "npm pack"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mathieu2301/TradingView-API.git"
+    "url": "git+https://github.com/lwpassvoice/TradingView-API"
   },
   "engines": {
     "node": ">=14.0.0"
@@ -25,7 +26,7 @@
     "bitcoin",
     "api"
   ],
-  "author": "Mathieu Colmon",
+  "author": "lwpassvoice",
   "license": "ISC",
   "dependencies": {
     "axios": "^1.5.0",

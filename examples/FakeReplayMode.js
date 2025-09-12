@@ -7,7 +7,9 @@ const { Client } = require('../main');
 
 console.log('----- Testing FakeReplayMode: -----');
 
-const client = new Client();
+const client = new Client({
+  proxy: 'http://127.0.0.1:7890',
+});
 const chart = new client.Session.Chart();
 
 chart.setMarket('BINANCE:BTCEUR', {
