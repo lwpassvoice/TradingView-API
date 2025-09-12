@@ -39,6 +39,7 @@ if (!process.env.SESSION || !process.env.SIGNATURE) {
 const client = new TradingView.Client({
   token: process.env.SESSION,
   signature: process.env.SIGNATURE,
+  proxy: 'http://127.0.0.1:7890',
 });
 
 (async function () {
