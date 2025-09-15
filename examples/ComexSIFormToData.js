@@ -26,7 +26,8 @@ const symbolsTmp = [
   'SIX2025', 'SIZ2025'
 ]
 
-const symbols = symbolsTmp;
+const symbols = ['SIN2025', 'SIQ2025', 'SIU2025', 'SIV2025',
+  'SIX2025', 'SIZ2025', 'SIF2026'];
 /**
  * This example tests fetching chart data of a number
  * of candles before or after a timestamp

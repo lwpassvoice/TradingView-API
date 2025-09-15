@@ -26,9 +26,8 @@ const symbolsTmp = [
   'GCX2025', 'GCZ2025'
 ]
 
-const symbols = ['GCF2019', 'GCG2019', 'GCH2019', 'GCJ2019', 'GCK2019',
-'GCM2019', 'GCN2019', 'GCQ2019', 'GCU2019', 'GCV2019',
-'GCX2019', 'GCZ2019'];
+const symbols = ['GCN2025', 'GCQ2025', 'GCU2025', 'GCV2025',
+  'GCX2025', 'GCZ2025', 'GCF2026'];
 /**
  * This example tests fetching chart data of a number
  * of candles before or after a timestamp

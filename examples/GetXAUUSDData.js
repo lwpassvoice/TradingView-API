@@ -28,12 +28,27 @@ chart.setMarket("XAUUSD", {
 
 // This works with indicators
 
+function formatData(rawData) {
+  return rawData.map((item) => {
+    return {
+      time: item.time,
+      open: item.open,
+      close: item.close,
+      max: item.max,
+      min: item.min,
+      volume: item.volume,
+      date: new Date(item.time * 1000).toLocaleString(),
+    };
+  });
+}
+
 TradingView.getIndicator("STD;Supertrend").then(async (indic) => {
   console.log(`Loading '${indic.description}' study...`);
   const SUPERTREND = new chart.Study(indic);
 
   SUPERTREND.onUpdate(() => {
-    console.log("Prices periods:", chart.periods);
+    console.log("Prices periods:", chart.periods.length);
+    console.log("Study periods:", SUPERTREND.periods.length);
     fs.writeFileSync(
       path.join(__dirname, "../files/xau/XAUUSD.data.json"),
       JSON.stringify(chart.periods)
@@ -42,7 +57,14 @@ TradingView.getIndicator("STD;Supertrend").then(async (indic) => {
       path.join(__dirname, "../files/xau/XAUUSD.supertrend.json"),
       JSON.stringify(SUPERTREND.periods)
     );
-    console.log("Study periods:", SUPERTREND.periods);
+
+    const formattedData = formatData(chart.periods);
+    // 写入文件
+    fs.writeFileSync(
+      path.join(__dirname, "../files/xau/XAUUSD.data.formatted.json"),
+      JSON.stringify(formattedData, null, 2)
+    );
+
     client.end();
   });
 });
