@@ -19,11 +19,13 @@ const client = new TradingView.Client({
 });
 
 const chart = new client.Session.Chart();
+const timeframe = "30";
+const year = '2025';
 
 chart.setMarket("XAGUSD", {
-  timeframe: "D",
-  range: 1800, // Can be positive to get before or negative to get after
-  to: new Date().getTime() / 1000,
+  timeframe,
+  range: 14400, // Can be positive to get before or negative to get after
+  to: new Date(`${year}-12-31 23:59:59`).getTime() / 1000,
 });
 
 // This works with indicators
@@ -48,19 +50,21 @@ TradingView.getIndicator("STD;Supertrend").then(async (indic) => {
   SUPERTREND.onUpdate(() => {
     console.log("Prices periods:", chart.periods.length);
     console.log("Study periods:", SUPERTREND.periods.length);
+    const dir = path.join(__dirname, `../files/xag/${timeframe}/`);
+    fs.mkdirSync(dir, { recursive: true });
     fs.writeFileSync(
-      path.join(__dirname, "../files/xag/XAGUSD.data.json"),
+      path.join(dir, `XAGUSD_${year}.data.json`),
       JSON.stringify(chart.periods)
     );
     fs.writeFileSync(
-      path.join(__dirname, "../files/xag/XAGUSD.supertrend.json"),
+      path.join(dir, `XAGUSD_${year}.supertrend.json`),
       JSON.stringify(SUPERTREND.periods)
     );
 
     const formattedData = formatData(chart.periods);
     // 写入文件
     fs.writeFileSync(
-      path.join(__dirname, "../files/xag/XAGUSD.data.formatted.json"),
+      path.join(dir, `XAGUSD_${year}.data.formatted.json`),
       JSON.stringify(formattedData, null, 2)
     );
 
