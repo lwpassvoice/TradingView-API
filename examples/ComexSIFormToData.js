@@ -23,11 +23,10 @@ const symbolsTmp = [
   'SIQ2024', 'SIU2024', 'SIV2024', 'SIX2024', 'SIZ2024',
   'SIF2025', 'SIG2025', 'SIH2025', 'SIJ2025', 'SIK2025',
   'SIM2025', 'SIN2025', 'SIQ2025', 'SIU2025', 'SIV2025',
-  'SIX2025', 'SIZ2025'
+  'SIX2025', 'SIZ2025', 'SIF2026', 'SIG2026', 'SIJ2026'
 ]
 
-const symbols = ['SIN2025', 'SIQ2025', 'SIU2025', 'SIV2025',
-  'SIX2025', 'SIZ2025', 'SIF2026'];
+const symbols = ['SIK2019'];
 /**
  * This example tests fetching chart data of a number
  * of candles before or after a timestamp
@@ -42,6 +41,7 @@ const client = new TradingView.Client({
   signature: process.env.SIGNATURE,
   proxy: 'http://127.0.0.1:7890',
 });
+const timeframe = "30";
 
 (async function () {
   for (let i = 0; i < symbols.length; i++) {
@@ -53,8 +53,8 @@ const client = new TradingView.Client({
         const chart = new client.Session.Chart();
 
         chart.setMarket(`COMEX:${symbol}`, {
-          timeframe: "D",
-          range: 300, // Can be positive to get before or negative to get after
+          timeframe,
+          range: 14400, // Can be positive to get before or negative to get after
           to: new Date().getTime() / 1000,
         });
 
@@ -83,18 +83,20 @@ const client = new TradingView.Client({
     const data = await getData();
     console.log("Prices periods:", data.prices.length);
     console.log("Study periods:", data.supertrend.length);
+    const dir = path.join(__dirname, `../files/comex_si/${timeframe}/`);
 
+    fs.mkdirSync(dir, { recursive: true });
     fs.writeFileSync(
-      path.join(__dirname, `../files/comex_si/COMEX_${symbol}.data.json`),
+      path.join(dir, `COMEX_${symbol}.data.json`),
       JSON.stringify(data.prices, null, 2)
     );
     fs.writeFileSync(
-      path.join(__dirname, `../files/comex_si/COMEX_${symbol}.supertrend.json`),
+      path.join(dir, `COMEX_${symbol}.supertrend.json`),
       JSON.stringify(data.supertrend, null, 2)
     );
 
     if (i < symbols.length - 1) {
-      await new Promise((resolve) => setTimeout(resolve, 15000)); // 每次循环暂停15秒
+      await new Promise((resolve) => setTimeout(resolve, 10000)); // 每次循环暂停15秒
     }
   }
   console.log("All done!");
