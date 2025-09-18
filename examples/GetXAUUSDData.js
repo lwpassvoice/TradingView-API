@@ -15,7 +15,7 @@ if (!process.env.SESSION || !process.env.SIGNATURE) {
 const client = new TradingView.Client({
   token: process.env.SESSION,
   signature: process.env.SIGNATURE,
-  proxy: 'http://127.0.0.1:7890',
+  proxy: "http://127.0.0.1:7890",
 });
 const chart = new client.Session.Chart();
 
@@ -36,13 +36,15 @@ const chart = new client.Session.Chart();
 //   | 'D'
 //   | 'W'
 //   | 'M';
-const timeframe = "30";
-const year = '2024';
+const timeframe = "D";
+const year = "";
 
 chart.setMarket("XAUUSD", {
   timeframe,
-  range: 14400, // Can be positive to get before or negative to get after
-  to: new Date(`${year}-12-31 23:59:59`).getTime() / 1000,
+  range: year ? 14400 : 50000, // Can be positive to get before or negative to get after
+  to: year
+    ? new Date(`${year}-12-31 23:59:59`).getTime() / 1000
+    : new Date().getTime() / 1000,
 });
 
 // This works with indicators
@@ -71,18 +73,26 @@ TradingView.getIndicator("STD;Supertrend").then(async (indic) => {
     const dir = path.join(__dirname, `../files/xau/${timeframe}/`);
     fs.mkdirSync(dir, { recursive: true });
     fs.writeFileSync(
-      path.join(dir, `XAUUSD_${year}.data.json`),
+      path.join(dir, year ? `XAUUSD_${year}.data.json` : "XAUUSD.data.json"),
       JSON.stringify(chart.periods)
     );
     fs.writeFileSync(
-      path.join(dir, `XAUUSD_${year}.supertrend.json`),
+      path.join(
+        dir,
+        year ? `XAUUSD_${year}.supertrend.json` : "XAUUSD.supertrend.json"
+      ),
       JSON.stringify(SUPERTREND.periods)
     );
 
     const formattedData = formatData(chart.periods);
     // 写入文件
     fs.writeFileSync(
-      path.join(dir, `XAUUSD_${year}.data.formatted.json`),
+      path.join(
+        dir,
+        year
+          ? `XAUUSD_${year}.data.formatted.json`
+          : "XAUUSD.data.formatted.json"
+      ),
       JSON.stringify(formattedData, null, 2)
     );
 

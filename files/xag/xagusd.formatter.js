@@ -30,7 +30,7 @@
 
 const fs = require("fs");
 const path = require("path");
-const data = require("./XAGUSD.data.json");
+const data = require("./D/XAGUSD.data.json");
 
 // function formatData(rawData) {
 //   return rawData.map((item) => {
