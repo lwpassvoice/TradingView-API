@@ -17,15 +17,18 @@ const client = new TradingView.Client({
   proxy: 'http://127.0.0.1:7890',
 });
 
-const chart = new client.Session.Chart();
-// chart.setMarket('NASDAQ:PLCE', {
-//   timeframe: 'D',
-//   range: 1000, // Can be positive to get before or negative to get after
-//   to: 1705000000,
-// });
+client.onData((data) => {
+  console.log('client onData data', data);
+});
 
+const chart = new client.Session.Chart();
+
+// Splits@tv-basicstudies-259
 chart.setMarket('MCX-GOLD1!', {
-  timeframe: 'D',
+  type: 'HeikinAshi',
+  currency: 'INR',
+  adjustment: 'splits',
+  timeframe: '1',
   range: 1000, // Can be positive to get before or negative to get after
   to: new Date().getTime() / 1000,
 });
@@ -43,13 +46,15 @@ chart.onUpdate(() => {
 
 TradingView.getIndicator('STD;Supertrend').then(async (indic) => {
   console.log(`Loading '${indic.description}' study...`);
+  console.log({ indic });
   const SUPERTREND = new chart.Study(indic);
 
   SUPERTREND.onUpdate(() => {
     console.log('Prices periods:', chart.periods.length);
-    fs.writeFileSync(path.join(__dirname, '../files/india/GCZ2025.data.json'), JSON.stringify(chart.periods));
-    fs.writeFileSync(path.join(__dirname, '../files/india/GCZ2025.supertrend.json'), JSON.stringify(SUPERTREND.periods));
+    fs.writeFileSync(path.join(__dirname, '../files/india/india.data.json'), JSON.stringify(chart.periods));
+    fs.writeFileSync(path.join(__dirname, '../files/india/india.supertrend.json'), JSON.stringify(SUPERTREND.periods));
     console.log('Study periods:', SUPERTREND.periods.length);
     client.end();
   });
 });
+// BarSetSpread@tv-prostudies-76
